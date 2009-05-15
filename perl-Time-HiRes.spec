@@ -1,7 +1,7 @@
 
 %define realname   Time-HiRes
 %define version    1.9719
-%define release    %mkrel 1
+%define release    %mkrel 2
 
 Name:       perl-%{realname}
 Version:    %{version}
