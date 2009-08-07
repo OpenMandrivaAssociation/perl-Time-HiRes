@@ -1,21 +1,19 @@
+%define upstream_name    Time-HiRes
+%define upstream_version 1.9719
 
-%define realname   Time-HiRes
-%define version    1.9719
-%define release    %mkrel 2
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+Epoch:      1
 
-Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
 Summary:    High resolution time, sleep, and alarm
-Source:     http://www.cpan.org/modules/by-module/Time/%{realname}-%{version}.tar.gz
-Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Time/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl-devel
-
-
-
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The 'Time::HiRes' module implements a Perl interface to the 'usleep',
@@ -37,7 +35,7 @@ If you try to import an unimplemented function in the 'use' statement it
 will fail at compile time.
 
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -58,5 +56,3 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
