@@ -1,5 +1,5 @@
 %define upstream_name    Time-HiRes
-%define upstream_version 1.9719
+%define upstream_version 1.9720
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
