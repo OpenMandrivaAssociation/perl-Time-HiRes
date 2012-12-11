@@ -56,3 +56,54 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1:1.972.400-2
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Mon Jun 13 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1:1.972.400-1
++ Revision: 684828
+- update to new version 1.9724
+
+* Sun May 22 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1:1.972.200-1
++ Revision: 677401
+- update to new version 1.9722
+
+* Sat Nov 13 2010 Jérôme Quelin <jquelin@mandriva.org> 1:1.972.100-4mdv2011.0
++ Revision: 597205
+- rebuild
+
+* Wed Jul 28 2010 Jérôme Quelin <jquelin@mandriva.org> 1:1.972.100-3mdv2011.0
++ Revision: 562438
+- rebuild
+
+* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 1:1.972.100-2mdv2011.0
++ Revision: 555201
+- rebuild for 5.12
+
+* Mon Mar 22 2010 Jérôme Quelin <jquelin@mandriva.org> 1:1.972.100-1mdv2010.1
++ Revision: 526426
+- update to 1.9721
+
+* Sat Feb 13 2010 Jérôme Quelin <jquelin@mandriva.org> 1:1.972.0-1mdv2010.1
++ Revision: 505266
+- update to 1.9720
+
+* Fri Aug 07 2009 Jérôme Quelin <jquelin@mandriva.org> 1:1.971.900-1mdv2010.0
++ Revision: 411163
+- rebuild using %%perl_convert_version
+
+* Fri May 15 2009 Jérôme Quelin <jquelin@mandriva.org> 1.9719-2mdv2010.0
++ Revision: 375890
+- rebuild
+
+* Wed May 06 2009 Jérôme Quelin <jquelin@mandriva.org> 1.9719-1mdv2010.0
++ Revision: 372651
+- import perl-Time-HiRes
+
+
+* Wed May 06 2009 cpan2dist 1.9719-1mdv
+- initial mdv release, generated with cpan2dist
+
