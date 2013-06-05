@@ -2,15 +2,15 @@
 %define upstream_version 1.9724
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Version:    %perl_convert_version 1.9725
+Release:	1
 Epoch:      1
 
 Summary:    High resolution time, sleep, and alarm
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Time/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Time/Time-HiRes-1.9725.tar.gz
 
 BuildRequires: perl-devel
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
@@ -106,4 +106,5 @@ rm -rf %buildroot
 
 * Wed May 06 2009 cpan2dist 1.9719-1mdv
 - initial mdv release, generated with cpan2dist
+
 
