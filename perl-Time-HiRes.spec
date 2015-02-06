@@ -2,7 +2,7 @@
 %define upstream_version 1.9726
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 Epoch:      1
 
 Summary:    High resolution time, sleep, and alarm
